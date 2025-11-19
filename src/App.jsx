@@ -73,8 +73,8 @@ const App = () => {
         className="main flex justify-between"
         style={{ height: "calc(100vh - 90px)" }}
       >
-        <div className="left h-[88%] w-[50%]">
-          <div className="tabs mt-5! px-5! mb-1! w-full flex items-center gap-2.5">
+        <div className="left h-[87%] w-[50%]">
+          <div className="tabs mt-5! px-5! mb-3! w-full flex items-center gap-2.5">
 
           
           <Select
@@ -94,8 +94,8 @@ const App = () => {
           />
         </div>
         <div className="right p-2.5! bg-zinc-900 w-[50%] h-full">
-          <div className="topTab flex items-center justify-between h-[60px]">
-            <p>Response</p>
+          <div className="topTab border-b border-t border-[#27272a] flex items-center justify-between h-[60px]">
+            <p className="font-bold text-[17px]">Response</p>
           </div>
         </div>
       </div>
