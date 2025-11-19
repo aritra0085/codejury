@@ -73,7 +73,7 @@ const App = () => {
         className="main flex justify-between"
         style={{ height: "calc(100vh - 90px)" }}
       >
-        <div className="left h-[80%] w-[50%]">
+        <div className="left h-[88%] w-[50%]">
           <div className="tabs mt-5! px-5! mb-1! w-full flex items-center gap-2.5">
 
           
@@ -92,6 +92,11 @@ const App = () => {
             value="// some comment"
             theme="vs-dark"
           />
+        </div>
+        <div className="right p-2.5! bg-zinc-900 w-[50%] h-full">
+          <div className="topTab flex items-center justify-between h-[60px]">
+            <p>Response</p>
+          </div>
         </div>
       </div>
     </>
