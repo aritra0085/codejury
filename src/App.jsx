@@ -88,7 +88,7 @@ const App = () => {
           </div>
           <Editor
             height="100%"
-            language="javascript"
+            language={selectedOption.value}
             value="// some comment"
             theme="vs-dark"
           />
