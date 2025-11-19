@@ -70,11 +70,11 @@ const App = () => {
     <>
       <Navbar />
       <div
-        className="main flex items-center justify-between"
+        className="main flex justify-between"
         style={{ height: "calc(100vh - 90px)" }}
       >
         <div className="left h-[80%] w-[50%]">
-          <div className="tabs px-5! mb-1! w-full flex items-center gap-2.5">
+          <div className="tabs mt-5! px-5! mb-1! w-full flex items-center gap-2.5">
 
           
           <Select
