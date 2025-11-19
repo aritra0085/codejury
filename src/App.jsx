@@ -4,7 +4,8 @@ import Navbar from "./components/Navbar";
 import Editor from "@monaco-editor/react";
 import Select from "react-select";
 import { GoogleGenAI } from "@google/genai";
-import Markdown from 'react-markdown'
+import Markdown from "react-markdown";
+import CircleLoader from "react-spinners/CircleLoader";
 const App = () => {
   const options = [
     { value: "javascript", label: "JavaScript" },
@@ -69,15 +70,15 @@ const App = () => {
     }),
   };
 
-   const [code, setCode] = useState("");
+  const [code, setCode] = useState("");
 
   // The client gets the API key from the environment variable `GEMINI_API_KEY`.
-const ai = new GoogleGenAI({AIzaSyCQQzAbno_BvA5xs3fkipTfw9wdmiV9MUE});
- const [loading, setLoading] = useState(false);
+  const ai = new GoogleGenAI({ apiKey: "AIzaSyCQQzAbno_BvA5xs3fkipTfw9wdmiV9MUE" });
+  const [loading, setLoading] = useState(false);
   const [response, setResponse] = useState("");
 
-   async function reviewCode() {
-    setResponse("")
+  async function reviewCode() {
+    setResponse("");
     setLoading(true);
     const response = await ai.models.generateContent({
       model: "gemini-2.0-flash",
@@ -97,7 +98,7 @@ Analyze it like a senior developer reviewing a pull request.
 Code: ${code}
 `,
     });
-    setResponse(response.text)
+    setResponse(response.text);
     setLoading(false);
   }
 
@@ -121,14 +122,22 @@ Code: ${code}
             <button className="btnNormal bg-purple-900 min-w-[120px] transition-all hover:bg-purple-800">
               Fix Code
             </button>
-            <button className="btnNormal bg-zinc-900 min-w-[120px] transition-all hover:bg-zinc-800">
-              Review
-            </button>
+            <button onClick={() => {
+              if (code === "") {
+                alert("Please enter code first")
+              }
+              else {
+                reviewCode()
+              }
+            }} className="btnNormal bg-zinc-900 min-w-[120px] transition-all hover:bg-zinc-800">Review</button>
           </div>
           <Editor
             height="100%"
             language={selectedOption.value}
-            value={code} onChange={(e)=>{setCode(e)}}
+            value={code}
+            onChange={(e) => {
+              setCode(e);
+            }}
             theme="vs-dark"
           />
         </div>
@@ -136,6 +145,8 @@ Code: ${code}
           <div className="topTab border-b border-t border-[#27272a] flex items-center justify-between h-[60px]">
             <p className="font-bold text-[17px]">Response</p>
           </div>
+          {loading && <CircleLoader color="#9333ea" />}
+          <Markdown>{response}</Markdown>
         </div>
       </div>
     </>
