@@ -141,7 +141,7 @@ Code: ${code}
             theme="vs-dark"
           />
         </div>
-        <div className="right p-2.5! bg-zinc-900 w-[50%] h-full">
+        <div className="right overflow-scroll p-2.5! bg-zinc-900 w-[50%] h-full">
           <div className="topTab border-b border-t border-[#27272a] flex items-center justify-between h-[60px]">
             <p className="font-bold text-[17px]">Response</p>
           </div>
