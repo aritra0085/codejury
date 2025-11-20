@@ -42,3 +42,6 @@ ul li{
   margin-bottom: 10px !important;
   list-style: circle !important;
 }
+li strong {
+  color: #fff;
+}
