@@ -1,6 +1,6 @@
 # AI-Powered Code Reviewer
 
-**Demo GitHub:** [https://github.com/dummy-user/ai-code-reviewer](https://github.com/dummy-user/ai-code-reviewer)
+**Demo GitHub:** [https://github.com/aritra0085/codejury](https://github.com/aritra0085/codejury)
 
 **Demo Website:** [https://ai-code-reviewer.example.com](https://ai-code-reviewer.example.com)
 
@@ -61,5 +61,5 @@ Contributions welcome. Open an issue or PR on the demo GitHub repo.
 
 ## Contact / Links
 
-* Repo: [https://github.com/dummy-user/ai-code-reviewer](https://github.com/dummy-user/ai-code-reviewer)
+* Repo: [https://github.com/aritra0085/codejury](https://github.com/aritra0085/codejury)
 * Live demo: [https://ai-code-reviewer.example.com](https://ai-code-reviewer.example.com)
