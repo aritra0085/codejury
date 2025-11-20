@@ -1,6 +1,6 @@
 import React from "react";
 import { BrainCircuit } from "lucide-react";
-import { Sun } from "lucide-react";
+import { ExternalLink } from 'lucide-react';
 
 const Navbar = () => {
   return (
@@ -14,9 +14,14 @@ const Navbar = () => {
           <span className="text-2xl font-bold text-white ml-2">CodeJury</span>
         </div>
         <div className="icons flex items-center gap-2.5">
-          <i className="cursor-pointer transition-all hover:text-[#9333ea]">
-            <Sun />
-          </i>
+          <a 
+  href="https://github.com/aritra0085" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="cursor-pointer transition-all hover:text-[#9333ea]"
+>
+  <ExternalLink />
+</a>
         </div>
       </div>
     </>
