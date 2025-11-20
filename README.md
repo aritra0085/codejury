@@ -1,16 +1,39 @@
-# React + Vite
+AI-Powered Code Reviewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Demo GitHub: https://github.com/dummy-user/ai-code-reviewer
 
-Currently, two official plugins are available:
+Demo Website: https://ai-code-reviewer.example.com
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Project Overview
 
-## React Compiler
+This project is a modern, practical example of how to build an AI-powered code review tool using React, Tailwind CSS, and Google's Gemini API. It integrates a Monaco code editor, sends code to a model for analysis, and presents clear review comments and suggestions in the UI.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Use this repository as a learning template or as a starting point for a production-ready reviewer (you'll need to harden auth, billing, and rate-limit handling first).
 
-## Expanding the ESLint configuration
+Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Live Monaco editor for editing or pasting code.
+
+Send code + review prompts to Gemini and receive structured feedback.
+
+Nice, responsive UI built with React and Tailwind CSS.
+
+Loading spinners and progress states using react-spinners.
+
+Pretty output using react-markdown (supports inline code, lists, suggestions).
+
+Minimal, easy-to-read JSON response parsing so you can wire custom UI cards.
+
+Tech Stack
+
+React (Create React App / Vite)
+
+Tailwind CSS — styling and responsive layout
+
+Gemini AI API — code analysis and review suggestions
+
+@monaco-editor/react — in-browser code editing
+
+react-spinners — loading states
+
+react-markdown — render model feedback nicely
