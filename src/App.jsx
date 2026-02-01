@@ -142,7 +142,7 @@ Code: ${code}
           />
         </div>
         <div className="right overflow-scroll p-2.5! bg-zinc-900 w-[50%] h-full">
-          <div className="topTab border-b border-t border-[#27272a] flex items-center justify-between h-[60px]">
+          <div className="topTab border-b border-t border-[#17272a] flex items-center justify-between h-[60px]">
             <p className="font-bold text-[17px]">Response</p>
           </div>
           {loading && <CircleLoader color="#9333ea" />}
